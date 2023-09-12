@@ -14,7 +14,7 @@ public class CashCardController {
 
     public CashCardController(CashCardRepository cashCardRepository) {
         this.cashCardRepository = cashCardRepository;
-    }
+    }    
 
     @GetMapping("/{requestedId}")
     public ResponseEntity<CashCard> findById(@PathVariable Long requestedId) {
