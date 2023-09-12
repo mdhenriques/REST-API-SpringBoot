@@ -42,10 +42,6 @@ public class CashCardController {
         }     
     }
 
-    @GetMapping()
-    public ResponseEntity<Iterable<CashCard>> findAll() {
-        return ResponseEntity.ok(cashCardRepository.findAll());
-    }
 
     @GetMapping
     public ResponseEntity<List<CashCard>> findAll(Pageable pageable) {
