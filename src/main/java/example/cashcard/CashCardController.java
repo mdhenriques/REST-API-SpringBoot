@@ -41,4 +41,9 @@ public class CashCardController {
             return ResponseEntity.notFound().build();
         }     
     }
+
+    @GetMapping()
+    public ResponseEntity<Iterable<CashCard>> findAll() {
+        return ResponseEntity.ok(cashCardRepository.findAll());
+    }
 }
