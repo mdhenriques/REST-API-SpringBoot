@@ -12,7 +12,7 @@ public class CashCardController {
 
     @GetMapping("/{requestedId}")
     public ResponseEntity<String> findById() {
-        CashCard cashCard = new CashCard(1000L, 0.0);
+        CashCard cashCard = new CashCard(99L, 123.45);
         return ResponseEntity.ok(cashCard);
     }
 }
