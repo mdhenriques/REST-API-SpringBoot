@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="example.cashcard.CashCardApplicationTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-09-12T19:49:23" hostname="murilo-20fma00f00" time="2.355">
+<testsuite name="example.cashcard.CashCardApplicationTests" tests="5" skipped="0" failures="0" errors="0" timestamp="2023-09-12T20:05:12" hostname="murilo-20fma00f00" time="2.532">
   <properties/>
-  <testcase name="shouldReturnACashCardWhenDataIsSaved()" classname="example.cashcard.CashCardApplicationTests" time="1.389"/>
-  <testcase name="shouldCreateANewCashCard()" classname="example.cashcard.CashCardApplicationTests" time="0.361"/>
-  <testcase name="shouldReturnAllCashCardsWhenListIsRequested()" classname="example.cashcard.CashCardApplicationTests" time="0.036"/>
-  <testcase name="shouldNotReturnACashCardWithAnUnknownId()" classname="example.cashcard.CashCardApplicationTests" time="0.014"/>
-  <system-out><![CDATA[16:49:20.498 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [example.cashcard.CashCardApplicationTests]: CashCardApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:49:20.668 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration example.cashcard.CashcardApplication for test class example.cashcard.CashCardApplicationTests
+  <testcase name="shouldReturnACashCardWhenDataIsSaved()" classname="example.cashcard.CashCardApplicationTests" time="1.449"/>
+  <testcase name="shouldCreateANewCashCard()" classname="example.cashcard.CashCardApplicationTests" time="0.344"/>
+  <testcase name="shouldReturnAPageOfCashCards()" classname="example.cashcard.CashCardApplicationTests" time="0.046"/>
+  <testcase name="shouldReturnAllCashCardsWhenListIsRequested()" classname="example.cashcard.CashCardApplicationTests" time="0.035"/>
+  <testcase name="shouldNotReturnACashCardWithAnUnknownId()" classname="example.cashcard.CashCardApplicationTests" time="0.018"/>
+  <system-out><![CDATA[17:05:08.412 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [example.cashcard.CashCardApplicationTests]: CashCardApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:05:08.564 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration example.cashcard.CashcardApplication for test class example.cashcard.CashCardApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -16,24 +17,24 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.3)
 
-2023-09-12T16:49:21.219-03:00  INFO 14737 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Starting CashCardApplicationTests using Java 17.0.8 with PID 14737 (started by murilodh in /home/murilodh/github-repos/REST-API-SpringBoot)
-2023-09-12T16:49:21.220-03:00  INFO 14737 --- [    Test worker] e.cashcard.CashCardApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2023-09-12T16:49:22.087-03:00  INFO 14737 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-09-12T16:49:22.139-03:00  INFO 14737 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 46 ms. Found 1 JDBC repository interfaces.
-2023-09-12T16:49:22.746-03:00  INFO 14737 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-09-12T16:49:22.759-03:00  INFO 14737 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-12T16:49:22.761-03:00  INFO 14737 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-12T16:49:22.909-03:00  INFO 14737 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-12T16:49:22.912-03:00  INFO 14737 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1633 ms
-2023-09-12T16:49:23.010-03:00  INFO 14737 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:2d3432cc-7e10-4602-af2e-7400a2ff7264;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2023-09-12T16:49:23.950-03:00  INFO 14737 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 33711 (http) with context path ''
-2023-09-12T16:49:23.975-03:00  INFO 14737 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Started CashCardApplicationTests in 3.145 seconds (process running for 4.961)
-2023-09-12T16:49:25.045-03:00  INFO 14737 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-12T16:49:25.045-03:00  INFO 14737 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-12T16:49:25.048-03:00  INFO 14737 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-09-12T16:49:25.516-03:00  INFO 14737 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-09-12T16:49:25.519-03:00  INFO 14737 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-12T16:49:25.535-03:00  INFO 14737 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:2d3432cc-7e10-4602-af2e-7400a2ff7264;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2023-09-12T17:05:09.096-03:00  INFO 15458 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Starting CashCardApplicationTests using Java 17.0.8 with PID 15458 (started by murilodh in /home/murilodh/github-repos/REST-API-SpringBoot)
+2023-09-12T17:05:09.105-03:00  INFO 15458 --- [    Test worker] e.cashcard.CashCardApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2023-09-12T17:05:09.959-03:00  INFO 15458 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-09-12T17:05:10.005-03:00  INFO 15458 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JDBC repository interfaces.
+2023-09-12T17:05:10.476-03:00  INFO 15458 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-12T17:05:10.489-03:00  INFO 15458 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-12T17:05:10.490-03:00  INFO 15458 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-12T17:05:10.637-03:00  INFO 15458 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-12T17:05:10.639-03:00  INFO 15458 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1489 ms
+2023-09-12T17:05:10.780-03:00  INFO 15458 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:00fdca7b-f703-4c07-be3b-aa1104307532;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-09-12T17:05:12.068-03:00  INFO 15458 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 34905 (http) with context path ''
+2023-09-12T17:05:12.082-03:00  INFO 15458 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Started CashCardApplicationTests in 3.357 seconds (process running for 4.765)
+2023-09-12T17:05:13.204-03:00  INFO 15458 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-12T17:05:13.205-03:00  INFO 15458 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-12T17:05:13.206-03:00  INFO 15458 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-12T17:05:13.670-03:00  INFO 15458 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-12T17:05:13.672-03:00  INFO 15458 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-12T17:05:13.683-03:00  INFO 15458 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:00fdca7b-f703-4c07-be3b-aa1104307532;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -43,21 +44,21 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.3)
 
-2023-09-12T16:49:25.766-03:00  INFO 14737 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Starting CashCardApplicationTests using Java 17.0.8 with PID 14737 (started by murilodh in /home/murilodh/github-repos/REST-API-SpringBoot)
-2023-09-12T16:49:25.767-03:00  INFO 14737 --- [    Test worker] e.cashcard.CashCardApplicationTests      : No active profile set, falling back to 1 default profile: "default"
-2023-09-12T16:49:25.931-03:00  INFO 14737 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-09-12T16:49:25.937-03:00  INFO 14737 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5 ms. Found 1 JDBC repository interfaces.
-2023-09-12T16:49:26.031-03:00  INFO 14737 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-09-12T16:49:26.032-03:00  INFO 14737 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-12T16:49:26.032-03:00  INFO 14737 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-12T16:49:26.043-03:00  INFO 14737 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-12T16:49:26.043-03:00  INFO 14737 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 269 ms
-2023-09-12T16:49:26.063-03:00  INFO 14737 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:258c00ec-1937-4841-bb6c-f6fefde35f4d;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2023-09-12T16:49:26.282-03:00  INFO 14737 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 45241 (http) with context path ''
-2023-09-12T16:49:26.289-03:00  INFO 14737 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Started CashCardApplicationTests in 0.545 seconds (process running for 7.274)
-2023-09-12T16:49:26.296-03:00  INFO 14737 --- [o-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-12T16:49:26.296-03:00  INFO 14737 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-12T16:49:26.297-03:00  INFO 14737 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-12T17:05:13.920-03:00  INFO 15458 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Starting CashCardApplicationTests using Java 17.0.8 with PID 15458 (started by murilodh in /home/murilodh/github-repos/REST-API-SpringBoot)
+2023-09-12T17:05:13.921-03:00  INFO 15458 --- [    Test worker] e.cashcard.CashCardApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2023-09-12T17:05:14.111-03:00  INFO 15458 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-09-12T17:05:14.125-03:00  INFO 15458 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 1 JDBC repository interfaces.
+2023-09-12T17:05:14.223-03:00  INFO 15458 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-12T17:05:14.224-03:00  INFO 15458 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-12T17:05:14.225-03:00  INFO 15458 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-12T17:05:14.237-03:00  INFO 15458 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-12T17:05:14.237-03:00  INFO 15458 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 314 ms
+2023-09-12T17:05:14.267-03:00  INFO 15458 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:fd35eb8c-85c1-4e9e-b93c-6e5bc471ae9e;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-09-12T17:05:14.503-03:00  INFO 15458 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 44411 (http) with context path ''
+2023-09-12T17:05:14.512-03:00  INFO 15458 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Started CashCardApplicationTests in 0.618 seconds (process running for 7.195)
+2023-09-12T17:05:14.522-03:00  INFO 15458 --- [o-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-12T17:05:14.522-03:00  INFO 15458 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-12T17:05:14.523-03:00  INFO 15458 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
