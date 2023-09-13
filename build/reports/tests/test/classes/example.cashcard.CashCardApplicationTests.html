@@ -29,7 +29,7 @@
 </td>
 <td>
 <div class="infoBox" id="failures">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>failures</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">3.936s</div>
+<div class="counter">3.921s</div>
 <p>duration</p>
 </div>
 </td>
@@ -50,8 +50,8 @@
 </div>
 </td>
 <td>
-<div class="infoBox failures" id="successRate">
-<div class="percent">91%</div>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
 <p>successful</p>
 </div>
 </td>
@@ -61,118 +61,13 @@
 <div id="tabs">
 <ul class="tabLinks">
 <li>
-<a href="#tab0">Failed tests</a>
+<a href="#tab0">Tests</a>
 </li>
 <li>
-<a href="#tab1">Tests</a>
-</li>
-<li>
-<a href="#tab2">Standard output</a>
+<a href="#tab1">Standard output</a>
 </li>
 </ul>
 <div id="tab0" class="tab">
-<h2>Failed tests</h2>
-<div class="test">
-<a name="shouldNotUpdateACashCardThatDoesNotExist()"></a>
-<h3 class="failures">shouldNotUpdateACashCardThatDoesNotExist()</h3>
-<span class="code">
-<pre>org.opentest4j.AssertionFailedError: 
-expected: 404 NOT_FOUND
- but was: 403 FORBIDDEN
-	at java.base@17.0.8/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base@17.0.8/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base@17.0.8/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base@17.0.8/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at app//example.cashcard.CashCardApplicationTests.shouldNotUpdateACashCardThatDoesNotExist(CashcardApplicationTests.java:189)
-	at java.base@17.0.8/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.8/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.8/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.8/java.lang.reflect.Method.invoke(Method.java:568)
-	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
-	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
-	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
-	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
-	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
-	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@17.0.8/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at java.base@17.0.8/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
-	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
-	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
-	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
-	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
-	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
-	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
-	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
-	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
-	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
-	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
-	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
-	at java.base@17.0.8/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base@17.0.8/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base@17.0.8/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base@17.0.8/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
-	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
-	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
-	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
-	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
-	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
-	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
-	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
-	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
-</pre>
-</span>
-</div>
-</div>
-<div id="tab1" class="tab">
 <h2>Tests</h2>
 <table>
 <thead>
@@ -184,71 +79,71 @@ expected: 404 NOT_FOUND
 </thead>
 <tr>
 <td class="success">shouldCreateANewCashCard()</td>
-<td class="success">0.512s</td>
+<td class="success">0.532s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldNotAllowAccessToCashCardsTheyDoNotOwn()</td>
-<td class="success">0.130s</td>
+<td class="success">0.147s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldNotReturnACashCardWhenUsingBadCredentials()</td>
-<td class="success">0.237s</td>
+<td class="success">0.223s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldNotReturnACashCardWithAnUnknownId()</td>
-<td class="success">0.112s</td>
+<td class="success">0.111s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
-<td class="failures">shouldNotUpdateACashCardThatDoesNotExist()</td>
-<td class="failures">0.245s</td>
-<td class="failures">failed</td>
+<td class="success">shouldNotUpdateACashCardThatDoesNotExist()</td>
+<td class="success">0.218s</td>
+<td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldRejectUsersWhoAreNotCardOwners()</td>
-<td class="success">0.207s</td>
+<td class="success">0.210s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">shouldReturnACashCardWhenDataIsSaved()</td>
-<td class="success">0.121s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldReturnAPageOfCashCards()</td>
-<td class="success">0.110s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldReturnASortedPageOfCashCards()</td>
-<td class="success">1.534s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldReturnASortedPageOfCashCardsWithNoParametersAndUseDefaultValues()</td>
-<td class="success">0.124s</td>
-<td class="success">passed</td>
-</tr>
-<tr>
-<td class="success">shouldReturnAllCashCardsWhenListIsRequested()</td>
 <td class="success">0.120s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
+<td class="success">shouldReturnAPageOfCashCards()</td>
+<td class="success">0.164s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnASortedPageOfCashCards()</td>
+<td class="success">1.524s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnASortedPageOfCashCardsWithNoParametersAndUseDefaultValues()</td>
+<td class="success">0.112s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldReturnAllCashCardsWhenListIsRequested()</td>
+<td class="success">0.124s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">shouldUpdateAnExistingCashCard()</td>
-<td class="success">0.484s</td>
+<td class="success">0.436s</td>
 <td class="success">passed</td>
 </tr>
 </table>
 </div>
-<div id="tab2" class="tab">
+<div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>12:01:52.460 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [example.cashcard.CashCardApplicationTests]: CashCardApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-12:01:52.625 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration example.cashcard.CashCardApplication for test class example.cashcard.CashCardApplicationTests
+<pre>12:04:32.247 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [example.cashcard.CashCardApplicationTests]: CashCardApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+12:04:32.423 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration example.cashcard.CashCardApplication for test class example.cashcard.CashCardApplicationTests
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -258,25 +153,25 @@ expected: 404 NOT_FOUND
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.3)
 
-2023-09-13T12:01:53.140-03:00  INFO 7585 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Starting CashCardApplicationTests using Java 17.0.8 with PID 7585 (started by murilodh in /home/murilodh/github-repos/REST-API-SpringBoot)
-2023-09-13T12:01:53.141-03:00  INFO 7585 --- [    Test worker] e.cashcard.CashCardApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-09-13T12:01:53.897-03:00  INFO 7585 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-09-13T12:01:53.942-03:00  INFO 7585 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 40 ms. Found 1 JDBC repository interfaces.
-2023-09-13T12:01:54.607-03:00  INFO 7585 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-09-13T12:01:54.619-03:00  INFO 7585 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-13T12:01:54.620-03:00  INFO 7585 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-13T12:01:54.736-03:00  INFO 7585 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-13T12:01:54.740-03:00  INFO 7585 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1544 ms
-2023-09-13T12:01:54.892-03:00  INFO 7585 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:29864112-7a93-4556-b829-d9ba7a0cc48b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2023-09-13T12:01:56.060-03:00  INFO 7585 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@34b2d51a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7e4ac598, org.springframework.security.web.context.SecurityContextHolderFilter@1d3a03fe, org.springframework.security.web.header.HeaderWriterFilter@16a09809, org.springframework.security.web.authentication.logout.LogoutFilter@f9a5e3f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7717b4a0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f7cd50e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e1d8d41, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@cf10c92, org.springframework.security.web.access.ExceptionTranslationFilter@dd20ebc, org.springframework.security.web.access.intercept.AuthorizationFilter@4315fe1b]
-2023-09-13T12:01:56.298-03:00  INFO 7585 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 36015 (http) with context path ''
-2023-09-13T12:01:56.306-03:00  INFO 7585 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Started CashCardApplicationTests in 3.526 seconds (process running for 5.368)
-2023-09-13T12:01:57.330-03:00  INFO 7585 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-13T12:01:57.331-03:00  INFO 7585 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-13T12:01:57.333-03:00  INFO 7585 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-09-13T12:01:58.399-03:00  INFO 7585 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-09-13T12:01:58.401-03:00  INFO 7585 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-13T12:01:58.416-03:00  INFO 7585 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:29864112-7a93-4556-b829-d9ba7a0cc48b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2023-09-13T12:04:32.886-03:00  INFO 7815 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Starting CashCardApplicationTests using Java 17.0.8 with PID 7815 (started by murilodh in /home/murilodh/github-repos/REST-API-SpringBoot)
+2023-09-13T12:04:32.888-03:00  INFO 7815 --- [    Test worker] e.cashcard.CashCardApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-09-13T12:04:33.746-03:00  INFO 7815 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-09-13T12:04:33.805-03:00  INFO 7815 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 1 JDBC repository interfaces.
+2023-09-13T12:04:34.526-03:00  INFO 7815 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-13T12:04:34.537-03:00  INFO 7815 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-13T12:04:34.539-03:00  INFO 7815 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-13T12:04:34.678-03:00  INFO 7815 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-13T12:04:34.681-03:00  INFO 7815 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1753 ms
+2023-09-13T12:04:34.813-03:00  INFO 7815 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:ef08b48a-bdca-4397-8210-396d54f45613;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-09-13T12:04:35.955-03:00  INFO 7815 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7e4ac598, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@cf10c92, org.springframework.security.web.context.SecurityContextHolderFilter@f48a080, org.springframework.security.web.header.HeaderWriterFilter@69a73867, org.springframework.security.web.authentication.logout.LogoutFilter@4aac81ca, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@69b37f5c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@401ec794, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4809c771, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f76872f, org.springframework.security.web.access.ExceptionTranslationFilter@6c70b7c3, org.springframework.security.web.access.intercept.AuthorizationFilter@34e990cc]
+2023-09-13T12:04:36.200-03:00  INFO 7815 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 43529 (http) with context path ''
+2023-09-13T12:04:36.215-03:00  INFO 7815 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Started CashCardApplicationTests in 3.636 seconds (process running for 5.277)
+2023-09-13T12:04:37.217-03:00  INFO 7815 --- [o-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-13T12:04:37.221-03:00  INFO 7815 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-13T12:04:37.223-03:00  INFO 7815 --- [o-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-13T12:04:38.331-03:00  INFO 7815 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-13T12:04:38.338-03:00  INFO 7815 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-13T12:04:38.354-03:00  INFO 7815 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:ef08b48a-bdca-4397-8210-396d54f45613;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -286,25 +181,25 @@ expected: 404 NOT_FOUND
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.3)
 
-2023-09-13T12:01:58.684-03:00  INFO 7585 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Starting CashCardApplicationTests using Java 17.0.8 with PID 7585 (started by murilodh in /home/murilodh/github-repos/REST-API-SpringBoot)
-2023-09-13T12:01:58.687-03:00  INFO 7585 --- [    Test worker] e.cashcard.CashCardApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-09-13T12:01:58.953-03:00  INFO 7585 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-09-13T12:01:58.972-03:00  INFO 7585 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 1 JDBC repository interfaces.
-2023-09-13T12:01:59.094-03:00  INFO 7585 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-09-13T12:01:59.095-03:00  INFO 7585 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-13T12:01:59.096-03:00  INFO 7585 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-13T12:01:59.112-03:00  INFO 7585 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-13T12:01:59.112-03:00  INFO 7585 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 420 ms
-2023-09-13T12:01:59.131-03:00  INFO 7585 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:809fce6e-45ba-469f-84b0-45e351c5b3e9;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2023-09-13T12:01:59.474-03:00  INFO 7585 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@96c840a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c81ddab, org.springframework.security.web.context.SecurityContextHolderFilter@eb6ccbc, org.springframework.security.web.header.HeaderWriterFilter@56b48163, org.springframework.security.web.authentication.logout.LogoutFilter@6f7a65e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@32121140, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5eae392d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cd1716d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24ee6faa, org.springframework.security.web.access.ExceptionTranslationFilter@55d8f6bb, org.springframework.security.web.access.intercept.AuthorizationFilter@6e22d6bf]
-2023-09-13T12:01:59.540-03:00  INFO 7585 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 45947 (http) with context path ''
-2023-09-13T12:01:59.547-03:00  INFO 7585 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Started CashCardApplicationTests in 0.914 seconds (process running for 8.608)
-2023-09-13T12:01:59.565-03:00  INFO 7585 --- [o-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-13T12:01:59.565-03:00  INFO 7585 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-13T12:01:59.566-03:00  INFO 7585 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-09-13T12:02:00.153-03:00  INFO 7585 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-09-13T12:02:00.154-03:00  INFO 7585 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-09-13T12:02:00.160-03:00  INFO 7585 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:809fce6e-45ba-469f-84b0-45e351c5b3e9;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
+2023-09-13T12:04:38.581-03:00  INFO 7815 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Starting CashCardApplicationTests using Java 17.0.8 with PID 7815 (started by murilodh in /home/murilodh/github-repos/REST-API-SpringBoot)
+2023-09-13T12:04:38.581-03:00  INFO 7815 --- [    Test worker] e.cashcard.CashCardApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-09-13T12:04:38.861-03:00  INFO 7815 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-09-13T12:04:38.875-03:00  INFO 7815 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JDBC repository interfaces.
+2023-09-13T12:04:39.045-03:00  INFO 7815 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-13T12:04:39.046-03:00  INFO 7815 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-13T12:04:39.053-03:00  INFO 7815 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-13T12:04:39.076-03:00  INFO 7815 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-13T12:04:39.089-03:00  INFO 7815 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 506 ms
+2023-09-13T12:04:39.135-03:00  INFO 7815 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:a3c9d9a6-71d0-4c41-81d0-ee7a4134ea85;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-09-13T12:04:39.466-03:00  INFO 7815 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@96c840a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c81ddab, org.springframework.security.web.context.SecurityContextHolderFilter@eb6ccbc, org.springframework.security.web.header.HeaderWriterFilter@56b48163, org.springframework.security.web.authentication.logout.LogoutFilter@6f7a65e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@32121140, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5eae392d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4cd1716d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@24ee6faa, org.springframework.security.web.access.ExceptionTranslationFilter@55d8f6bb, org.springframework.security.web.access.intercept.AuthorizationFilter@6e22d6bf]
+2023-09-13T12:04:39.521-03:00  INFO 7815 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 41567 (http) with context path ''
+2023-09-13T12:04:39.525-03:00  INFO 7815 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Started CashCardApplicationTests in 0.964 seconds (process running for 8.588)
+2023-09-13T12:04:39.547-03:00  INFO 7815 --- [o-auto-2-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-13T12:04:39.547-03:00  INFO 7815 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-13T12:04:39.549-03:00  INFO 7815 --- [o-auto-2-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-09-13T12:04:40.142-03:00  INFO 7815 --- [    Test worker] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-09-13T12:04:40.142-03:00  INFO 7815 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-09-13T12:04:40.147-03:00  INFO 7815 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:h2:mem:a3c9d9a6-71d0-4c41-81d0-ee7a4134ea85;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false'
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -314,115 +209,22 @@ expected: 404 NOT_FOUND
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v3.1.3)
 
-2023-09-13T12:02:00.411-03:00  INFO 7585 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Starting CashCardApplicationTests using Java 17.0.8 with PID 7585 (started by murilodh in /home/murilodh/github-repos/REST-API-SpringBoot)
-2023-09-13T12:02:00.412-03:00  INFO 7585 --- [    Test worker] e.cashcard.CashCardApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
-2023-09-13T12:02:00.622-03:00  INFO 7585 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
-2023-09-13T12:02:00.631-03:00  INFO 7585 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 1 JDBC repository interfaces.
-2023-09-13T12:02:00.741-03:00  INFO 7585 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
-2023-09-13T12:02:00.743-03:00  INFO 7585 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-09-13T12:02:00.745-03:00  INFO 7585 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-13T12:02:00.766-03:00  INFO 7585 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-09-13T12:02:00.766-03:00  INFO 7585 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 350 ms
-2023-09-13T12:02:00.787-03:00  INFO 7585 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:66be1584-0ee4-419e-8aac-80e08a4461ba;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
-2023-09-13T12:02:01.109-03:00  INFO 7585 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22561412, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@32153bbe, org.springframework.security.web.context.SecurityContextHolderFilter@13e5b262, org.springframework.security.web.header.HeaderWriterFilter@136cad3e, org.springframework.security.web.authentication.logout.LogoutFilter@6a358906, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@646ddc20, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6500e886, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@220e1b7b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4806fbf7, org.springframework.security.web.access.ExceptionTranslationFilter@34be7efb, org.springframework.security.web.access.intercept.AuthorizationFilter@5a941fb4]
-2023-09-13T12:02:01.185-03:00  INFO 7585 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 46109 (http) with context path ''
-2023-09-13T12:02:01.191-03:00  INFO 7585 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Started CashCardApplicationTests in 0.827 seconds (process running for 10.252)
-2023-09-13T12:02:01.205-03:00  INFO 7585 --- [o-auto-3-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-13T12:02:01.206-03:00  INFO 7585 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-09-13T12:02:01.209-03:00  INFO 7585 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-09-13T12:02:01.410-03:00 ERROR 7585 --- [o-auto-3-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.NullPointerException: Cannot invoke &quot;example.cashcard.CashCard.id()&quot; because &quot;cashCard&quot; is null] with root cause
-
-java.lang.NullPointerException: Cannot invoke &quot;example.cashcard.CashCard.id()&quot; because &quot;cashCard&quot; is null
-	at example.cashcard.CashCardController.putCashCard(CashCardController.java:59) ~[main/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593) ~[tomcat-embed-core-10.1.12.jar:6.0]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.0.11.jar:6.0.11]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.12.jar:6.0]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.12.jar:10.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:200) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.1.3.jar:6.1.3]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.11.jar:6.0.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.12.jar:10.1.12]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
+2023-09-13T12:04:40.452-03:00  INFO 7815 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Starting CashCardApplicationTests using Java 17.0.8 with PID 7815 (started by murilodh in /home/murilodh/github-repos/REST-API-SpringBoot)
+2023-09-13T12:04:40.454-03:00  INFO 7815 --- [    Test worker] e.cashcard.CashCardApplicationTests      : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2023-09-13T12:04:40.626-03:00  INFO 7815 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2023-09-13T12:04:40.632-03:00  INFO 7815 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4 ms. Found 1 JDBC repository interfaces.
+2023-09-13T12:04:40.695-03:00  INFO 7815 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2023-09-13T12:04:40.696-03:00  INFO 7815 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-09-13T12:04:40.697-03:00  INFO 7815 --- [    Test worker] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-13T12:04:40.718-03:00  INFO 7815 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-09-13T12:04:40.726-03:00  INFO 7815 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 254 ms
+2023-09-13T12:04:40.773-03:00  INFO 7815 --- [    Test worker] o.s.j.d.e.EmbeddedDatabaseFactory        : Starting embedded database: url='jdbc:h2:mem:02c2a339-5fdd-47fc-996b-4d9ac1b2f18b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2023-09-13T12:04:41.084-03:00  INFO 7815 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32153bbe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4806fbf7, org.springframework.security.web.context.SecurityContextHolderFilter@6500e886, org.springframework.security.web.header.HeaderWriterFilter@13e5b262, org.springframework.security.web.authentication.logout.LogoutFilter@893081e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@22561412, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@220e1b7b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54fd5759, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4280b20b, org.springframework.security.web.access.ExceptionTranslationFilter@136cad3e, org.springframework.security.web.access.intercept.AuthorizationFilter@646ddc20]
+2023-09-13T12:04:41.129-03:00  INFO 7815 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 36599 (http) with context path ''
+2023-09-13T12:04:41.132-03:00  INFO 7815 --- [    Test worker] e.cashcard.CashCardApplicationTests      : Started CashCardApplicationTests in 0.775 seconds (process running for 10.195)
+2023-09-13T12:04:41.147-03:00  INFO 7815 --- [o-auto-3-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-13T12:04:41.148-03:00  INFO 7815 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-09-13T12:04:41.149-03:00  INFO 7815 --- [o-auto-3-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 </pre>
 </span>
 </div>
@@ -434,7 +236,7 @@ java.lang.NullPointerException: Cannot invoke &quot;example.cashcard.CashCard.id
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.2.1</a> at Sep 13, 2023, 12:02:02 PM</p>
+<a href="http://www.gradle.org">Gradle 8.2.1</a> at Sep 13, 2023, 12:04:42 PM</p>
 </div>
 </div>
 </body>
