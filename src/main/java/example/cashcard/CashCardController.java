@@ -49,7 +49,7 @@ public class CashCardController {
             PageRequest.of(
                     pageable.getPageNumber(),
                     pageable.getPageSize(),
-                    pageable.getSort()
+                    pageable.getSortOr(Sort.by(Sort.Direction.ASC, "amount"))
         ));
         return ResponseEntity.ok(page.getContent());
     }
