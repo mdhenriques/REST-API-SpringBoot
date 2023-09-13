@@ -18,7 +18,7 @@ public class SecurityConfig {
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests()
             .requestMatchers("/cashcards/**")
-            .authenticated()
+            .hasRole("CARD-OWNER")
             .and()
             .csrf().disable()
             .httpBasic();
