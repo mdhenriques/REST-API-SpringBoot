@@ -5,6 +5,24 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
+# Arquivos de build e saída
+/build/
+/bin/
+/out/
+/.gradle/
+/.idea/
+
+# Arquivos de configuração pessoal
+/.vscode/
+/.settings/
+
+# Arquivos de log
+*.log
+
+# Arquivos de propriedades sensíveis
+application.properties
+application.yml
+
 ### STS ###
 .apt_generated
 .classpath
