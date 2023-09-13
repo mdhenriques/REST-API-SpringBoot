@@ -10,7 +10,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 import java.security.Principal;
 import java.net.URI;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/cashcards")
@@ -19,6 +18,10 @@ public class CashCardController {
 
     public CashCardController(CashCardRepository cashCardRepository) {
         this.cashCardRepository = cashCardRepository;
+    }
+
+    private CashCard findCashCard(Long requestedId, Principal principal) {
+        return cashCardRepository.findByIdAndOwner(requestedId, principal.getName());
     }
 
     @GetMapping("/{requestedId}")
